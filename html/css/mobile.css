@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, 
+a, abbr, acronym, address, big, cite,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+
+body {
+margin: 0;
+padding: 0;
+background-color: #fff;
+font-size: medium;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#page {
+margin: 5px;
+background-color: #fff;
+color: #222;
+border: 1px solid #888;
+font-size: 20px;
+}
+
+a {
+text-decoration: none;
+}
+
+img {
+border: none;
+}
+
+/* Header &amp; Footer */
+
+#header, #header a, #footer, #footer a {
+color: #222;
+font-size: 24px;
+}
+
+#navbar, #subnav {
+background-color:#EEEEEE;
+background-image:url(http://cdn.oreilly.com/images/oreilly/888-line.gif);
+background-position:right bottom;
+background-repeat:repeat-x;
+overflow:auto;
+width:100%;
+height: 32px;
+}
+
+#nav li, #subnav li {
+border-right: 1px solid #888;
+float:left;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+display: block;
+}
+
+#nav li.last {
+border-right: none;
+}
+
+#nav li a, #subnav li a {
+display: block;
+padding: 2px 4px;
+}
+
+#nav li.selected, #subnav li.selected {
+background-color: #fff;
+border-bottom: 1px solid #fff;
+}
+
+#nav li a:hover, #subnav li a:hover {
+text-decoration: underline;
+}
+
+#logo {
+height: 80px;
+background-image:url(/images/earstu_banner.jpg);
+padding: 6px 0 6px 8px;
+}
+
+#subnav {
+border-top: 1px solid #888;
+}
+
+#subnav .subscribe, #subnav .subscribe span {
+float: left;
+display: block;
+}
+
+#subnav .subscribe span {
+padding: 2px 4px;
+}
+
+#subnav .subscribe ul {
+float: left;
+}
+
+#subnav .subscribe li {
+border-right: none;
+}
+
+#subnav .subscribe li a {
+padding: 1px 4px 0;
+}
+
+#subnav .subscribe li a:hover {
+background-color: #eee;
+} 
+
+
+#footer {
+height: 80px;
+padding: 6px 0 6px 8px;
+background-image:url(/images/earstu_banner_ud.jpg);
+}
+
+/* Content */
+
+#content {
+
+}
+
+p.content-intro {
+margin: 0;
+padding: 14px 8px;
+border-bottom: 1px solid #bbb;
+}
+
+.linklist li {
+list-style: none;
+/*display: block;
+border-bottom: 1px solid #bbb;*/
+}
+
+.linklist li a {
+color: #22a;
+}
+
+.2-column {
+float: left;
+width: 50%;
+}
+
+.applist li a {
+height:55px;
+}
+
+.linklist .icon {
+float: left;
+clear: left;
+margin: 0 10px 10px 0;
+}
+
+.linklist li a:hover {
+background-color: #f8f8f8;
+}
+
+.linklist li .title {
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-wrap: normal;
+}
+
+/* Entry */
+
+#entry {
+padding: 14px;
+border-bottom: 1px solid #888;
+}
+
+#entry .title {
+margin-top: 0;
+}
+
+#entry .right {
+padding-left: 8px;
+}
+
+#entry p, #entry ul, #entry ol, #entry dl {
+margin: 12px 0;
+}
+
+#entry dt {
+font-weight: bold;
+}
+
+#entry li, #entry dd {
+margin-left: 20px;
+}
+
+#entry code {
+font-family: mono;
+}
+
+#entry pre {
+font-family: mono;
+margin: 10px;
+padding: 10px;
+overflow: scroll;
+width: 100%;
+}
+
+#entry blockquote {
+margin: 12px 20px;
+font-style: italic;
+}
+
+#entry img {
+padding: 8px;
+}
+
+/* Comments */
+
+#comments {
+}
+
+#comments .title {
+font-size: 26;
+margin-left: 8px;
+}
+
+#comments .module {
+padding: 12px 8px 0;
+border-bottom: 1px solid #888;
+}
+
+#comments .module .byline {
+font-weight: bold;
+}
+
+#comments hr {
+margin: 0;
+}
+
+#comments p, #comments ul, #comments ol, #comments dl {
+margin: 12px 0;
+}
+
+#comments dt {
+font-weight: bold;
+}
+
+#comments li, #comments dd {
+margin-left: 20px;
+}
+
+#comments code {
+font-family: mono;
+}
+
+#comments pre {
+font-family: mono;
+margin: 10px;
+padding: 10px;
+overflow: scroll;
+width: 100%;
+}
+
+#comments blockquote {
+margin: 12px 20px;
+font-style: italic;
+}
+
+/* Widget Tag cloud */
+
+.tag-content {
+margin: 14px;
+}
+
+.cbox { text-align: left; }
+
+.widget-cloud a:link {
+color: #990000;
+text-decoration: none;
+}
+
+.widget-cloud a:visited {
+color:#990000;
+text-decoration: none;
+}
+
+.widget-cloud a:hover {
+text-decoration: underline;
+}
+
+.widget-cloud .widget-list {
+}
+
+.linklist {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.widget-cloud .widget-list-item {
+display: inline;
+margin: 0 5px 0 0;
+padding: 0;
+line-height: 22px;
+background: none;
+}
+/* Entry navigation */
+
+.sub_nav {
+overflow: auto;
+background-color: #eee;
+padding: 12px;
+border-bottom: 1px solid #888;
+}
+
+.sub_nav a {
+color: #222;
+}
+
+.sub_nav a:hover {
+text-decoration: underline;
+}
+
+.left { 
+float:left;
+}
+
+.right { 
+float:right;
+}
+
+.search-results-container {
+border-top: 1px solid #888;
+}
+
+.linklist h3 {
+margin-left: 8px;
+font-size: 24px;
+}

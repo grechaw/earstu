@@ -1,0 +1,64 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/mobile.css" type="text/css"/>
+
+</head>
+<body>
+  <div id="header">
+  <div id="navbar">
+	  <ul id="nav">
+	    <li><a href='.'>EARSTU</a></li>
+	    <li><a href='http://myspace.com/earstu'>Earstu on Myspace</a></li>
+	    <li><a href='http://twitter.com/earstu'>Follow EARSTU (showtimes, songs)</a></li>
+	    <li><a href='http://twitter.com/grechaw'>Follow Chuggernaut (blather, geekitude)</a></li>
+	  </ul>
+  </div>
+	  <div id="logo">
+	  </div>
+  </div>
+  <div id="page">
+    <div id="navbar">
+    <ul>
+    </ul>
+    </div>
+    <div id="content">
+    <ul class="linklist applist" id="twitter_update_list"></ul>
+    </div>
+    <div id="calendar">
+    <iframe src="http://www.google.com/calendar/embed?title=EARSTU%20Live%20Events&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23990000&amp;src=ujjgp3q4f11eskk8h0kitu6nl8%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FLos_Angeles" style=" border:solid 1px #777 " width="100%" height="260" frameborder="0" scrolling="no"></iframe>
+    </div>
+<div id="footer">
+</div>
+<script src="/js/jquery-1.3.2.min.js"></script>
+<script src="/js/jquery-ui-1.7.1.custom.min.js"></script>
+<script>
+	var myCallback = function(results) {
+		var makeLinks = function(strResult) {	
+			return strResult.replace(/(http:\/\/\S+)/,'<a href="$1">$1</a>');
+		}
+		var results = results.results;
+		for (var i=0;i < results.length; i++) {
+		$('#twitter_update_list').append("<li>" + makeLinks(results[i].text) + "</li>");
+		}
+	}
+	$( function() {
+		$('.view-container-border').css("background-color", "#000000");
+	});
+	</script>
+	<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<!--
+	<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/grechaw.json?callback=twitterCallback2&amp;count=10"></script>
+-->
+	<script type="text/javascript" src="http://search.twitter.com/search.json?q=EARSTU&callback=myCallback&amp;count=5"></script> 
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-498594-1");
+	pageTracker._trackPageview();
+	</script>
+  </body>
+</html>
+
+
